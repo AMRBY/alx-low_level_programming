@@ -1,6 +1,8 @@
 #include <stdio.h>
 /**
-*display string
+*main - display string
+*Description: "Programming is like building a multilingual puzzle"
+*return: value 0
 */
 int main(void)
 {
