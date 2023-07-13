@@ -2,7 +2,7 @@
 /**
 *main - display string
 *Description: "Programming is like building a multilingual puzzle"
-*return: value 0
+*Return: value 0
 */
 int main(void)
 {
