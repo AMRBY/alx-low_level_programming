@@ -7,14 +7,14 @@
 */
 int main(void)
 {
-	int c = 48;
-	int v = 48;
+int c = 48;
+int v = 48;
 
 	for (c = 48; c <= 57; c++)
 	{
-		v = c + 1;
-		for (; v <= 57; v++)
-		{
+	v = c + 1;
+	for (; v <= 57; v++)
+	{
 				putchar(c);
 				putchar(v);
 				if (c != 56 || v != 57)
@@ -22,7 +22,7 @@ int main(void)
 				putchar(',');
 				putchar(' ');
 				}
-		}
+	}
 	}
 putchar('\n');
 return (0);
