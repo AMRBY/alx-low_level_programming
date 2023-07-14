@@ -14,18 +14,18 @@ int main(void)
 	{
 		for (; v <= 57; v++)
 		{
-		  if (c != v)
-		  {
+			if (c != v)
+			{
 			putchar(c);
 			putchar(v);
-		  	if (c != 56 || v != 57)
-		  	{	
+		  		if (c != 56 || v != 57)
+				}	
 				putchar(',');
 				putchar(' ');
-		  	}
-		  }
+		  		}
+			}
 		}
-	v = c + 1;
+		v = c + 1;
 	}
 putchar('\n');
 return (0);
