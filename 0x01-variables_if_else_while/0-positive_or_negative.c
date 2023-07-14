@@ -2,7 +2,8 @@
 #include <stdlib.h>
 #include <time.h>
 
-/** main - testing n
+/** 
+ * main - testing n
  * Description: print if negative, zero or positive
  * return: 0
 */
