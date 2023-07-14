@@ -15,13 +15,13 @@ int v = 48;
 		v = c + 1;
 		for (; v <= 57; v++)
 		{
-				putchar(c);
-				putchar(v);
-				if (c != 56 || v != 57)
-				{
-				putchar(',');
-				putchar(' ');
-				}
+			putchar(c);
+			putchar(v);
+			if (c != 56 || v != 57)
+			{
+			putchar(',');
+			putchar(' ');
+			}
 		}
 	}
 putchar('\n');
