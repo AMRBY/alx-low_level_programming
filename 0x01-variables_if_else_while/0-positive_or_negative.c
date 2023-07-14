@@ -5,7 +5,7 @@
 /** main - testing n
  * Description: print if negative, zero or positive
  * return: 0
- * */
+*/
 int main(void)
 {
 	int n;
