@@ -18,11 +18,11 @@ int main(void)
 			{
 				putchar(c);
 				putchar(v);
-		  		if (c != 56 || v != 57)
+				if (c != 56 || v != 57)
 				{	
 				putchar(',');
 				putchar(' ');
-		  		}
+				}
 			}
 		}
 		v = c + 1;
