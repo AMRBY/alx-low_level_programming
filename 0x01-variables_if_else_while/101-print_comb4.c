@@ -7,23 +7,28 @@
 */
 int main(void)
 {
-	int c = 48;
-	int v = 48;
-	int b = 48;
+int c = 48;
+int v = 48;
+int x = 48;
 
 	for (c = 48; c <= 57; c++)
 	{
+		v = c + 1;
 		for (; v <= 57; v++)
 		{
+			x = v + 1;
+			for (; x <= 57; x++)
+			{
 				putchar(c);
 				putchar(v);
-				if (c != 56 || v != 57)
+				putchar(x);
+				if (c != 55 || v != 56 || x != 57)
 				{
-				putchar(',');
-				putchar(' ');
+					putchar(',');
+					putchar(' ');
 				}
+			}
 		}
-		v = c + 1;
 	}
 putchar('\n');
 return (0);
