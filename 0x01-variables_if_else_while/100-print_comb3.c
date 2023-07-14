@@ -19,7 +19,7 @@ int main(void)
 				putchar(c);
 				putchar(v);
 				if (c != 56 || v != 57)
-				{	
+				{
 				putchar(',');
 				putchar(' ');
 				}
