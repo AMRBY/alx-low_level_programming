@@ -9,10 +9,10 @@ int main(void)
 {
 	int c = 48;
 	int v = 48;
+	int b = 48;
 
 	for (c = 48; c <= 57; c++)
 	{
-		v = c + 1;
 		for (; v <= 57; v++)
 		{
 				putchar(c);
@@ -23,6 +23,7 @@ int main(void)
 				putchar(' ');
 				}
 		}
+		v = c + 1;
 	}
 putchar('\n');
 return (0);
