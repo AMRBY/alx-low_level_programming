@@ -3,7 +3,7 @@
 /**
  * _islower - putchar
  * Description: display _putchar string
- * Description: c is a variable
+ * @c: the character to check
  * Return: 0
 */
 int _islower(int c)
