@@ -1,0 +1,17 @@
+#include "main.h"
+#include <stdio.h>
+#include <ctype.h>
+/**
+ * _islower - putchar
+ * Description: display _putchar string
+ * Return: 0
+*/
+int _islower(int c)
+{
+	int x=islower(c);
+
+	if (x == 0)
+		return(0);
+	else
+		return(1);
+}
