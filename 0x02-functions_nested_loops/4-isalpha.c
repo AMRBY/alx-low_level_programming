@@ -1,17 +1,22 @@
-#include <ctype.h>
 #include "main.h"
-/**
- * print_sign - putchar
- * Description: display _putchar string
- * @c: the character to check
- * Return: 0
-*/
-int print_sign(int n);
-{
-	int x = isalpha(c);
+#include <stdio.h>
 
-	if (x == 0)
-		return (0);
-	else
-		return (1);
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+    int r;
+
+    r = _abs(-1);
+    printf("%d\n", r);
+    r = _abs(0);
+    printf("%d\n", r);
+    r = _abs(1);
+    printf("%d\n", r);
+    r = _abs(-98);
+    printf("%d\n", r);
+    return (0);
 }
