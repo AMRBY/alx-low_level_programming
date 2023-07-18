@@ -3,7 +3,7 @@
 /**
  * print_sign - putchar
  * Description: display _putchar string
- * @c: the character to check
+ * @x: the character to check
  * Return: 0
 */
 int print_sign(int x)
