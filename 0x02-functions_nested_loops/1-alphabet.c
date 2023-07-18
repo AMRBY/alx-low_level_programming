@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * main - putchar
+ *  - putchar
  * Description: display _putchar string
  * Return: 0
 */
-int main(void)
+void print_alphabet_x10(void)
 {
 int i;
 
@@ -13,5 +13,5 @@ int i;
 	}
 	_putchar('\n');
 
-return (0);
+return;
 }
