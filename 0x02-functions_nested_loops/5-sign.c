@@ -6,12 +6,22 @@
  * @c: the character to check
  * Return: 0
 */
-int print_sign(int n);
+int print_sign(int x)
 {
-	int x = isalpha(c);
 
 	if (x == 0)
+	{
+		_putchar('0');
 		return (0);
-	else
+	}
+	else if (x > 0)
+	{
+		_putchar('+');
 		return (1);
+	}
+	else
+	{
+		_putchar('-');
+		return (-1);
+	}
 }
