@@ -1,7 +1,7 @@
 #include <ctype.h>
 #include "main.h"
 /**
- * _islower - putchar
+ * _isalpha - putchar
  * Description: display _putchar string
  * @c: the character to check
  * Return: 0
