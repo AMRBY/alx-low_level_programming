@@ -3,7 +3,7 @@
 /**
  * _abs - putchar
  * Description: display _putchar string
- * @c: the character to check
+ * @x: the character to check
  * Return: 0
 */
 int _abs(int x)
@@ -13,5 +13,5 @@ int _abs(int x)
 		x = x;
 	else 
 		x = -x;
-return(x);
+	return (x);
 }
