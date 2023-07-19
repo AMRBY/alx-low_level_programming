@@ -19,10 +19,8 @@ int main(void)
 
     printf("Date: %02d/%02d/%04d\n", month, day, year);
 
-	printf("%d\n", day);
     day = convert_day(month, day);
-	printf("%d\n", day);
-	print_remaining_days(month, day, year);
+    print_remaining_days(month, day, year);
 
     return (0);
 }
