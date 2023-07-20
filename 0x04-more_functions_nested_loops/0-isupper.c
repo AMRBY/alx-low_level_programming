@@ -9,6 +9,7 @@
 int _isupper(int c){
 	
 	c = isupper(c);
+
 	if (c != 0)
 		return (1);
 	else
