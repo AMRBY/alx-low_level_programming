@@ -1,7 +1,7 @@
 #include <ctype.h>
 
 /**
- * main - find uppercase
+ * _isupper  - find uppercase
  * Description: find uppercase
  * Return: 0
  * */
