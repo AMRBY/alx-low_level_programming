@@ -3,8 +3,9 @@
 /**
  * print_diagonal - find digit
  * Description: find digit
+ * @n: int
  * Return: 0/1
- * */
+ **/
 void print_diagonal(int n)
 {
 	int i;
@@ -26,5 +27,4 @@ void print_diagonal(int n)
 	}
 	else
 		_putchar('\n');
-	return;
 }
