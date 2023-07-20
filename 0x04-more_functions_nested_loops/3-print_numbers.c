@@ -4,7 +4,7 @@
  * print_numbers - find digit
  * Description: find digit
  * Return: 0/1
- * */
+ */
 void print_numbers(void)
 {
 	int i;
