@@ -4,7 +4,7 @@
  * main - find digit
  * Description: find digit
  * Return: 0/1
- * */
+ **/
 int main(void)
 {
 	int i;
