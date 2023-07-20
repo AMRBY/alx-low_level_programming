@@ -4,10 +4,10 @@
  * _isupper  - find uppercase
  * Description: find uppercase
  * Return: 0
- * */
+ */
 
-int _isupper(int c){
-	
+int _isupper(int c)
+{
 	c = isupper(c);
 
 	if (c != 0)
