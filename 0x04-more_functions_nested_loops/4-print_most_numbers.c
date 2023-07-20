@@ -4,7 +4,7 @@
  * print_most_numbers - find digit
  * Description: find digit
  * Return: 0/1
- * */
+ **/
 void print_most_numbers(void)
 {
 	int i;
@@ -15,5 +15,4 @@ void print_most_numbers(void)
 			_putchar(i);
 	}
 	_putchar('\n');
-	return;
 }
