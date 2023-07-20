@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_diagonal - find digit
+ * print_triangle - find digit
  * Description: find digit
  * @size: int
  * Return: 0/1
