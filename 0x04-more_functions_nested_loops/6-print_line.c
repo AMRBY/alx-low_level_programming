@@ -3,8 +3,9 @@
 /**
  * print_line - find digit
  * Description: find digit
+ * @n: int
  * Return: 0/1
- * */
+ **/
 void print_line(int n)
 {
 	int i;
@@ -17,5 +18,5 @@ void print_line(int n)
 		}
 	}
 		_putchar('\n');
-	return;
+	return (0);
 }
