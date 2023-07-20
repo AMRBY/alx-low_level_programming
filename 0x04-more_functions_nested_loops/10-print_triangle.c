@@ -3,8 +3,9 @@
 /**
  * print_diagonal - find digit
  * Description: find digit
+ * @size: int
  * Return: 0/1
- * */
+ **/
 void print_triangle(int size)
 {
 	int i, z, k;
