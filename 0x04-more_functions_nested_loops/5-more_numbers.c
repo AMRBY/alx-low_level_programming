@@ -4,7 +4,7 @@
  * more_numbers - find digit
  * Description: find digit
  * Return: 0/1
- * */
+ **/
 void more_numbers(void)
 {
 	int i, z, j;
@@ -27,5 +27,4 @@ void more_numbers(void)
 		}
 		_putchar('\n');
 	}
-	return;
 }
