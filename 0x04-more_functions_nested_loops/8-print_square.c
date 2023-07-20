@@ -3,12 +3,13 @@
 /**
  * print_square - find digit
  * Description: find digit
+ * @size: int
  * Return: 0/1
- * */
+ **/
 void print_square(int size)
 {
 	int i;
-	int j =0;
+	int j = 0;
 
 	if (size > 0)
 	{
