@@ -1,0 +1,71 @@
+#include "main.h"
+#include <stdio.h>
+
+/**
+ * print_number - find digit
+ * Description: find digit
+ * @n: int
+ * Return: 0/1
+ **/
+void print_number(int n)
+{
+	int i, d, np;
+int x, j;
+	if (n < 0)
+	{
+		n = -n;
+		_putchar('-');
+	}
+	if (n >= 10)
+	{
+		i = 0;
+		j = 0;
+		d = 1;
+		x = 10;
+		while (d != 0)
+		{
+			while (j != 0)
+			{
+				x *= 10;
+				--j;
+			}
+			d = n / x; 
+			//printf("%i\n", d);
+			i++;
+			j++;
+		}
+
+		j = 0;	
+		x = x / 10;
+		for (; i > 0; i--)
+		{
+			while (j != 0)
+			{
+				x /= 10;
+				--j;
+			}
+			d = n % x;
+			printf("%i\n", d);
+			j++;
+		}
+	}
+	else
+	{	
+		np = n + 48;
+		_putchar(np);
+	}
+}
+int main(void)
+{
+	print_number(123);
+	_putchar('\n');
+	print_number(3);
+	_putchar('\n');
+	print_number(0);
+	    _putchar('\n');
+	    print_number(987654321);
+	        _putchar('\n');
+	    print_number(-20);
+	        _putchar('\n');
+	return (0);
+}
