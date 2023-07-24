@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * strlen - 98
+ * _strlen - length of strings
  * Description: find digit
  * @s: int pointer
  * Return: 0
