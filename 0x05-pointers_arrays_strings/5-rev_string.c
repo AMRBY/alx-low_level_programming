@@ -9,17 +9,22 @@
 void rev_string(char *s)
 {
 	int i = 0;
+	int j = 0;
+	char tmp, l;
 
 	while (*(s + i))
 	{
 		i++;
 	}
 	i--;
-	while (i >= 0)
+	l = i / 2;
+	while (i > l)
 	{
-		_putchar(*(s + i));
+		tmp = *(s+j);
+		*(s+j) = *(s+i);
+		*(s+i) = tmp;
+		j++;
 		i--;
 	}
-	_putchar('\n');
 }
 
