@@ -3,16 +3,17 @@
 #include "main.h"
 
 /**
- * _strcat - length of strings
+ * _strncpy - length of strings
  * Description: find digit
  * @src: char pointer
  * @dest: char pointer
- * Return: void
+ * @n: int
+ * Return:char 
  */
-char *_strcat(char *dest, char *src)
+char *_strncpy(char *dest, char *src, int n)
 {
 
-	strcat(dest, src);	
+	strncpy(dest, src, n);	
 	return (dest);
 }
 
