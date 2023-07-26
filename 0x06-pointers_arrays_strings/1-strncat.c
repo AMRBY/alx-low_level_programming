@@ -8,7 +8,7 @@
  * @src: char pointer
  * @dest: char pointer
  * @n: int
- * Return:char 
+ * Return:char
  */
 char *_strncat(char *dest, char *src, int n)
 {
