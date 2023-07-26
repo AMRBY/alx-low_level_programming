@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
- * _strincat - length of strings
+ * _strncat - length of strings
  * Description: find digit
  * @src: char pointer
  * @dest: char pointer
@@ -12,7 +12,6 @@
  */
 char *_strncat(char *dest, char *src, int n)
 {
-
 	strncat(dest, src, n);	
 	return (dest);
 }
