@@ -1,0 +1,63 @@
+#include <stdio.h>
+#include <string.h>
+#include "main.h"
+
+/**
+ * reverse_array - length of strings
+ * Description: find digit
+ * @a: int pointer
+ * @n: int
+ * Return: void
+ */
+void reverse_array(int *a, int n)
+{
+	int i, j, tmp;
+
+	if (n % 2)
+	{
+		i = (n / 2) - 1;
+		j = i + 2;
+	}
+	else
+	{
+		j = n / 2;
+		i = j - 1;
+	}
+	while (i >= 0)
+	{
+		tmp = a[i];
+		a[i] = a[j];
+		a[j] = tmp;
+		i--;
+		j++;
+	}
+}
+void print_array(int *a, int n)
+{
+    int i;
+
+    i = 0;
+    while (i < n)
+    {
+        if (i != 0)
+        {
+            printf(", ");
+        }
+    printf("%d", a[i]);
+    i++;
+    }
+    printf("\n");
+}
+
+int main(void)
+{
+        int a[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 98, 1024, 1337};
+	int x = sizeof(a) / sizeof(int);
+	printf("array lenght: %i\n",x);
+	print_array(a, sizeof(a) / sizeof(int));
+        reverse_array(a, x);
+	print_array(a, sizeof(a) / sizeof(int));
+        return (0);
+}
+
+
