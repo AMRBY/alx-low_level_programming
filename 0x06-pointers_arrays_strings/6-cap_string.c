@@ -24,7 +24,7 @@ char *cap_string(char *p)
 		{
 			if (p[i] == sep[j])
 			{
-				if (p[0] < 96 && p[0] > 123)
+				if (p[i + 1] < 96 && p[i + 1] > 123)
 					p[i + 1] = p[i + 1] - 32;
 			}
 			j++;
