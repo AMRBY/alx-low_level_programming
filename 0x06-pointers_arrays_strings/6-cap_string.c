@@ -23,7 +23,10 @@ char *cap_string(char *p)
 		while (sep[j] != '\0')
 		{
 			if (p[i] == sep[j])
-				p[i + 1] = p[i + 1] - 32;
+			{
+				if (p[0] < 96 && p[0] > 123)
+					p[i + 1] = p[i + 1] - 32;
+			}
 			j++;
 		}
 		i++;
