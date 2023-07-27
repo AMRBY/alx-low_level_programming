@@ -5,6 +5,7 @@
 /**
  * string_toupper - length of strings
  * Description: find digit
+ * @p: pointer
  * Return: char
  */
 void *string_toupper(char *p)
@@ -15,7 +16,7 @@ void *string_toupper(char *p)
 	{
 		if (p[i] > 96 && p[i] < 123)
 		{
-	 	p[i] = p[i] - 32;
+			p[i] = p[i] - 32;
 		}
 		i++;
 	}
