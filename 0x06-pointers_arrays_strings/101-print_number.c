@@ -1,28 +1,28 @@
 #include "main.h"
 /**
  * print_number - prints an integer
- * @na: integer to print
+ * @n: integer to print
  * Return: nothing
  */
-void print_number(int na)
+void print_number(int n)
 {
-	unsigned int pc, i, z, nmodul, n;
+	unsigned int pc, i, z, nmodul, na;
 
-	if (na == 0)
+	if (n == 0)
 		_putchar('0');
 	/* if n is negative we make it positive*/
-	if (na < 0)
+	if (n < 0)
 	{
-		n = -na;
+		na = -n;
 		_putchar('-');
 	}
 	else
-		n = na;
-	if (n < 10 && n > 0)
-		_putchar(n + '0');
-	while (n >= 10)
+		na = n;
+	if (na < 10 && na > 0)
+		_putchar(na + '0');
+	while (na >= 10)
 	{
-		pc = n;
+		pc = na;
 		z = 0;
 		nmodul = 0;
 		for (i = 0; pc >= 10; i++)
@@ -37,8 +37,8 @@ void print_number(int na)
 		_putchar(pc + '0');
 		while (z-- > 0)
 			_putchar('0');
-		n %= nmodul;
-		if (n > 0 && n < 10)
-			_putchar(n + '0');
+		na %= nmodul;
+		if (na > 0 && na < 10)
+			_putchar(na + '0');
 	}
 }
