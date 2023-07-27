@@ -12,8 +12,8 @@ char *rot13(char *p)
 {
 	int i = 0;
 	int j = 0;
-	char a[] = "abcdefghijklmABCDEFGHIJKLM";
-	char z[] = "nopqrstuvwxyzNOPQRSTUVWXYZ";
+	char a[] = "abcdefghijklmABCDEFGHIJKLMnopqrstuvwxyzNOPQRSTUVWXYZ";
+	char z[] = "nopqrstuvwxyzNOPQRSTUVWXYZabcdefghijklmABCDEFGHIJKLM";
 
 	for (i = 0; p[i] != '\0'; i++)
 	{
@@ -21,9 +21,10 @@ char *rot13(char *p)
 		while (a[j] != '\0')
 		{
 			if (p[i] == a[j])
+			{
 				p[i] = z[j];
-			else if (p[i] == z[j])
-				p[i] = a[j];
+				break;
+			}
 		j++;
 		}
 	}
