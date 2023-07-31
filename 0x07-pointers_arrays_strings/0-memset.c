@@ -3,13 +3,14 @@
 #include "main.h"
 
 /**
- * _strcat - length of strings
+ * _memset - length of strings
  * Description: find digit
- * @src: char pointer
- * @dest: char pointer
+ * @s: char pointer
+ * @b: char pointer
+ * @n: char pointer
  * Return: void
  */
-char *_strcat(char *dest, char *src)
+char *_memset(char *s, char b, unsigned int n)
 {
 	strcat(dest, src);
 	return (dest);
