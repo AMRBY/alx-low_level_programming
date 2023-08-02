@@ -9,7 +9,6 @@
  */
 int factorial(int n)
 {
-	int i = 0;
 	int x = 0;
 
 	if (n < 0)
