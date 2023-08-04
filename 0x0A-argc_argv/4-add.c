@@ -1,37 +1,32 @@
-#include "main.h"
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
+
 /**
-* main - function
-* Description: its name
-* @argv: argv
-* @argc: argc
-* Return: 0
+*main - adds positive numbers
+*@argc: number of arguments
+*@argv: array of arguments
+*Return: 0 on success, 1 on failure
 */
+
 int main(int argc, char *argv[])
 {
-	int i;
-	int x = 0;
+	int i, j, sum = 0;
 
-	if (argc > 1)
+	for (i = 1; i < argc; i++)
 	{
-		for (i = 1; i < argc; i++)
+		for (j = 0; argv[i][j] != '\0'; j++)
 		{
-			if (argv[i][0] < '0' || argv[i][0] > '9')
+			if (argv[i][j] < '0' || argv[i][j] > '9')
 			{
 				printf("Error\n");
 				return (1);
 			}
-			else
-			{
-				x += atoi(argv[i]);
-			}
 		}
-		printf("%i\n", x);
+
+		sum += atoi(argv[i]);
 	}
-	else
-	{
-		printf("0\n");
-	}
+
+	printf("%d\n", sum);
+
 	return (0);
 }
