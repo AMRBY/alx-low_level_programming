@@ -24,12 +24,8 @@ int main(int argc, char *argv[])
 					printf("Error\n");
 					return (1);
 				}
-				else
-				{
-					x += atoi(argv[i]);
-					return (0);
-				}
 			}
+			x += atoi(argv[i]);
 		}
 		printf("%i\n", x);
 	}
