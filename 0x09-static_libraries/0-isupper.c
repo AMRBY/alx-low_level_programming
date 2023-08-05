@@ -1,4 +1,5 @@
 #include <ctype.h>
+#include "main.h"
 
 /**
  * _isupper  - find uppercase
