@@ -23,15 +23,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s1 != NULL)
 		while (s1[i])
 			i++;
-	else 
-		s1 = "";
 	if (s2 != NULL)
 		while (s2[j])
 			j++;
-	else
-		s2 = "";
 	if (n >= j)
 		m = j;
+	else 
+		m = n;
 	a = malloc(sizeof(char) * (i + m + 1));
 	if (a == NULL)
 	{
