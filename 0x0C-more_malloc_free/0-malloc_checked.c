@@ -11,18 +11,8 @@
 
 void *malloc_checked(unsigned int b)
 {
-	char *a;
-	unsigned int i = 0;
+	void *a = malloc(b);
 
-	if (size == 0)
-		return (NULL);
-	a = malloc(sizeof(char) * size);
 	if (a == NULL)
-		return (NULL);
-	while (i < size)
-	{
-		a[i] = c;
-		i++;
-	}
-	return (a);
+		exit(98);
 }
