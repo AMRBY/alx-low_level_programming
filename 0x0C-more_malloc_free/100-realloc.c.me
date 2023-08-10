@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "main.h"
+
+/**
+ * realloc  - find uppercase
+ * Description: find uppercase
+ * @ptr : arg
+ * @old_size : arg
+ * @new_size : arg
+ * Return: a
+ */
+
+void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
+{
+	int *a;
+	int i, j = 0;
+
+	if (min > max)
+		return (NULL);
+
+	a = malloc(sizeof(int) * (max - min + 1));
+
+	if (a == NULL)
+		return (NULL);
+	for (i = min; i < max + 1; i++)
+	{
+		a[j++] = i;
+	}
+	return (a);
+}
