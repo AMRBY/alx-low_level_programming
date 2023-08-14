@@ -1,11 +1,11 @@
 #include <stdio.h>
 /**
- * main function
+ * main - function
  * Description: main
  * main: file name
  * Return: 0
- * */
-int main()
+*/
+int main(void)
 {
 	printf(__FILE__"\n");
 	return (0);
