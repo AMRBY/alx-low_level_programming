@@ -1,20 +1,19 @@
-#include <stdlib.h>
 #include "dog.h"
 /**
- * init_dog - length of strings
- * Description: find digit
- * @d: char pointer
- * @name: char pointer
- * @age: char pointer
- * @owner: char pointer
- * Return: void
+ * init_dog - initialize a variable of type struct dog
+ * @d: a pointer to a dog structure
+ * @name: the name to set
+ * @age: age to set
+ * @owner: owner to set
+ *
+ * Return: Nothing after setting
  */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	if (d == NULL)
-		d = malloc(sizeof(struct dog));
-	if (d == NULL)
+	/* I verifie if @d is not null */
+	if (!d)
 		return;
+	/*since d is not NULL i initialize */
 	d->name = name;
 	d->age = age;
 	d->owner = owner;
