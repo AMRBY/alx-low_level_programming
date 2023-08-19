@@ -79,8 +79,8 @@ void print_all(const char * const format, ...)
 				printf(", ");
 
 			fun(p);
+			k = 1;
 		}
-		k = 1;
 		j = 0;
 		i++;
 	}
