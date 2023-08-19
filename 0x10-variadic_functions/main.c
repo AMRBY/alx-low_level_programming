@@ -1,4 +1,4 @@
-#include "variadic_functions.h"
+#include "print_all.h"
 
 /**
  * main - check the code
@@ -7,6 +7,6 @@
  */
 int main(void)
 {
-    print_strings(", ", 2, "", "Django");
+    print_all("ceis", 'B', 3, NULL);
     return (0);
 }
