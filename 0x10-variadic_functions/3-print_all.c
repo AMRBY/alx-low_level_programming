@@ -67,7 +67,7 @@ void print_all(const char * const format, ...)
 	};
 
 	va_start(p, format);
-	while (format[i])
+	while (format && format[i])
 	{
 		while (j < 4 && format[i] != typ[j].a)
 			j++;
