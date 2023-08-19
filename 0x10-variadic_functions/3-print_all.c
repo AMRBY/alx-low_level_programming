@@ -2,29 +2,56 @@
 #include <stdio.h>
 #include <stdarg.h>
 /**
-* print_all - function
+* print_int - function
 * Description: its name
-* @format: number
+* @x: number
 * Return: 0
 */
 void print_int(va_list x)
 {
 	printf("%i", va_arg(x, int));
 }
+/**
+* print_char - function
+* Description: its name
+* @x: number
+* Return: 0
+*/
+
 void print_char(va_list x)
 {
 	printf("%c", va_arg(x, int));
 }
+/**
+* print_float - function
+* Description: its name
+* @x: number
+* Return: 0
+*/
+
 void print_float(va_list x)
 {
 	printf("%f", va_arg(x, double));
 }
+/**
+*print_string - function
+*Description: its name
+*@x: number
+*Return: 0
+*/
+
 void print_string(va_list x)
 {
 	char *w = (va_arg(x, char*) == NULL) ? "(nil)" : va_arg(x, char*);
 
 	printf("%s", w);
 }
+/**
+* print_all - function
+* Description: its name
+* @format: number
+* Return: 0
+*/
 
 void print_all(const char * const format, ...)
 {
