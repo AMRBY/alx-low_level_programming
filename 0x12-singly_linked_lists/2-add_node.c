@@ -9,16 +9,17 @@
  */
 list_t *add_node(list_t **head, const char *str)
 {
-	list_t *h;
-	const char *z;
+	list_t *node;
 
-	z = malloc(sizeof(char) * strlen(str));
-	if (z == NULL)
+	node = malloc(sizeof(list_t));
+	if (node == NULL)
 		return (NULL);
 
-	z = strdup(str);
-	h = *head;
-	printf("[%ld] %s\n", strlen(str), z);
+	node->str = strdup(str);
+	node->len = strlen(str);
+	node->next = *head;
 
-	return (h);
+	printf("[%d] %s\n", node->len, node->str);
+
+	return (node->next);
 }
