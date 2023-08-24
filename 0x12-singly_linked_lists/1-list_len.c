@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * print_list - length of strings
+ * list_len - length of strings
  * Description: find digit
  * @h: int pointer
  * Return: size_t
