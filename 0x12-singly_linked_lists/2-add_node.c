@@ -9,7 +9,7 @@
  */
 list_t *add_node(list_t **head, const char *str)
 {
-	list_t *h;
+	list_t *h = malloc(sizeof(char) * strlen(str));
 
 	h = *head;
 	printf("[%ld] %s\n", strlen(str), str);
