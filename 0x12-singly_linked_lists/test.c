@@ -6,24 +6,24 @@ typedef struct s_type {
 	struct s_type *next;
 } t_type;
 
+t_type add_node(int value)
+{
+	t_type *result;
+	result->value = value;
+	result->next = NULL;
+	return(result);
+}
+
 int main(void){
-
-	t_type *p, n4, n1, n2, n3;
-
-	n1.value = 11;
-	n2.value = 22;
-	n3.value = 33;
-	n4.value = 44;
-
-	p = &n1;
-	n1.next = &n2;
-	n2.next = &n3;
-	n3.next = NULL;
-	n4.next = &n3;
-	n2.next = &n4;
+	t_type *head, *p;
 
 	while (p != NULL)
 	{
+		head = add_node(10);
+		head->next = tmp;
+		add_node(20);
+		add_node(30);
+
 		printf("%d - ", p->value);
 		p = p->next;
 	}

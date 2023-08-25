@@ -18,12 +18,18 @@ list_t *add_node_end(list_t **head, const char *str)
 	node->str = strdup(str);
 	node->len = strlen(str);
 	node->next = NULL;
-	pr_node = *head; 
-	while (pr_node->next != NULL)
+	pr_node = *head;
+	if (pr_node == NULL)
 	{
-		pr_node = pr_node->next;
+		*head = pr_node;
 	}
-	pr_node->next = *head;
-
+	else
+	{
+		while (pr_node->next != NULL)
+		{
+			pr_node = pr_node->next;
+		}
+		pr_node->next = node;
+	}
 	return (*head);
 }
