@@ -21,7 +21,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		return (NULL);
 
 	h_pr = *head;
-	for (z = 0; z < idx; z++)
+	for (z = 1; z < idx; z++)
 	{
 		h_pr = h_pr->next;
 	}
