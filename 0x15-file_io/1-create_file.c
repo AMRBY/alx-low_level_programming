@@ -9,18 +9,20 @@
  */
 int create_file(const char *filename, char *text_content)
 {
-	int o;
+	int o, w;
 	size_t len;
 
 	if (filename == NULL)
 		return (-1);
 
-	o = open(filename, O_WRONLY | O_CREAT | O_EXCL, 0600);
+	o = open(filename, O_WRONLY | O_CREAT | O_TRUNC, 0600);
 	if (o == -1)
 		return (-1);
 
 	len = strlen(text_content);
-	write(o, text_content, len);
+	w = write(o, text_content, len);
+	if (w == -1)
+		return (-1);
 
 	close(o);
 
