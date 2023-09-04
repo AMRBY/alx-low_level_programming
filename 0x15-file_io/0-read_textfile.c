@@ -18,11 +18,17 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	o = open(filename, O_RDONLY);
 	r = read(o, p, letters);
 	if (o == -1 || r == -1)
+	{
+		free(p);
 		return (0);
+	}
 
 	w = write(1, p, r);
 	if (w == -1)
+	{
+		free(p);
 		return (0);
+	}
 
 	close(o);
 	free(p);
