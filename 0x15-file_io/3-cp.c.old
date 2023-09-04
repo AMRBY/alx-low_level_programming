@@ -1,0 +1,33 @@
+#include "main.h"
+
+/**
+ * main - length of strings
+ * Description: find digit
+ * @filename: int pointer
+ * @text_content: int pointer
+ * Return: size_t
+ */
+int main(int argc, char **argv)
+{
+	char *from, *to;
+	int o, r, w;
+
+	if (argc != 3)
+	{
+		dprintf(2, "Usage: cp file_from file_to\n");
+		exit(97);
+	}
+	from = argv[1];
+	to = argv[2];
+	if (!from)
+	{
+		dprintf(2, "Error: Can't read from file NAME_OF_THE_FILE\n");
+		exit(98);
+	}
+
+	o = open(from);
+	if (o == -1)
+		return ();
+
+	return();
+}
