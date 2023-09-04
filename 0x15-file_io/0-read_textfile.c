@@ -9,7 +9,7 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int o, r, w;
+	ssize_t o, r, w;
 	char *p = malloc(sizeof(char) * letters);
 
 	if (filename == NULL)
