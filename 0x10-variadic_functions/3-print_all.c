@@ -72,8 +72,8 @@ void print_all(const char * const format, ...)
 		while (j < 4 && format[i] != typ[j].a)
 		{
 			j++;
-			fun = NULL;
 		}
+
 		fun = typ[j].b;
 		if (typ[j].b != NULL)
 		{

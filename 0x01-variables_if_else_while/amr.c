@@ -14,11 +14,12 @@ int y;
 
 	for (a = 48; a <= 57; a++)
 	{
+		x = a;
 		for (b = 48; b <= 57; b++)
 		{
-			for (x = a; x <= 57; x++)
+			y = b + 1;
+			for (; x <= 57; x++)
 			{
-				y = b + 1;
 				for (; y <= 57; y++)
 				{
 					putchar(a);
@@ -32,7 +33,9 @@ int y;
 						putchar(' ');
 					}
 				}
+				y = 48;
 			}
+			x = a;
 		}
 	}
 putchar('\n');
