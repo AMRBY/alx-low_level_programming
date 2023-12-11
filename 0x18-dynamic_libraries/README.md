@@ -1,1 +1,1 @@
-This dynamic library tasks
+This is static libraries project
