@@ -1,7 +1,5 @@
 #my first Makefile
-.PHONY = all
 CC = gcc
-SRC = $(wildcard *.c)
-
+SRC = main.c school.c
 all: ${SRC}
 	${CC} ${SRC} -o school
